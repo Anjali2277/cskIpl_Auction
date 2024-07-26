@@ -28,27 +28,8 @@ Create pie charts to visualize the distribution of player types and the prices p
 - **Google Colab**: For running the Python code in an interactive environment.
 - **Pandas**: For data loading, filtering, and manipulation.
 - **Matplotlib**: For creating pie charts and other visualizations.
-
-# Detailed Steps
-
-## 1. Extracting the ZIP File
-```python
-from google.colab import files
-import zipfile
-import os
-
-# Upload the ZIP file
-uploaded = files.upload()
-
-# Extract the ZIP file
-zip_file_name = 'iplAuction.zip'
-with zipfile.ZipFile(zip_file_name, 'r') as zip_ref:
-    zip_ref.extractall('extracted_data')
-
-# List extracted files
-os.listdir('extracted_data')
-
-#Expected Outcomes
+  
+# Explected Outcomes
 
 ![Screenshot (336)](https://github.com/user-attachments/assets/3b6bf95f-8e78-4fc7-a7ff-8e90e80f1c0f)
 
@@ -68,8 +49,22 @@ os.listdir('extracted_data')
 
 
 
+# Detailed Steps
 
+## 1. Extracting the ZIP File
+```python
+from google.colab import files
+import zipfile
+import os
 
+# Upload the ZIP file
+uploaded = files.upload()
 
+# Extract the ZIP file
+zip_file_name = 'iplAuction.zip'
+with zipfile.ZipFile(zip_file_name, 'r') as zip_ref:
+    zip_ref.extractall('extracted_data')
 
+# List extracted files
+os.listdir('extracted_data')
 
